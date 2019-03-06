@@ -1,4 +1,8 @@
 <div class="wrapper">
+  <div class="alert">
+    {{ message }}
+  </div>
+
   <h5>
     Each time we route between pages the button will dynamically render, like
     context button.
@@ -10,7 +14,9 @@
     <br />
     So the navbar knows nothing about the component !
   </h5>
-  <action-button (click)="handleHomeClick()">
-    <button class="btn btn-outline-danger">Home</button>
+  <action-button>
+    <button class="btn btn-outline-danger" (click)="handleHomeClick()">
+      Home
+    </button>
   </action-button>
 </div>

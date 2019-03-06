@@ -12,13 +12,14 @@ import { CdkPortal, DomPortalHost } from "@angular/cdk/portal";
 @Component({
   selector: "action-button",
   template: `
-    <ng-container *cdkPortal>
+    <ng-template cdkPortal>
       <ng-content></ng-content>
-    </ng-container>
+    </ng-template>
   `
 })
 export class ActionButtonComponent implements AfterViewInit, OnDestroy {
-  @ViewChild(CdkPortal) portal;
+  @ViewChild(CdkPortal)
+  private portal: CdkPortal;
   private host: DomPortalHost;
 
   constructor(

@@ -6,9 +6,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
+  private message: string;
   constructor() {}
 
-  handleHomeClick(): void {}
+  handleHomeClick(): void {
+    this.message = "This is new text inside Home component";
+  }
 
   ngOnInit() {}
 }

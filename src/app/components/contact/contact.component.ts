@@ -6,8 +6,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./contact.component.scss"]
 })
 export class ContactComponent implements OnInit {
+  public message: string;
   constructor() {}
 
-  handleContactClick(): void {}
+  handleContactClick(): void {
+    this.message = "This is new text inside Contact component";
+  }
   ngOnInit() {}
 }

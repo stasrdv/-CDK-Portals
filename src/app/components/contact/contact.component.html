@@ -1,8 +1,13 @@
 <div class="wrapper">
+  <div class="alert">
+    {{ message }}
+  </div>
   <p>
     Contact page
   </p>
-  <action-button (click)="handleContactClick()">
-    <button class="btn btn-outline-primary">Contact</button>
+  <action-button>
+    <button class="btn btn-outline-primary" (click)="handleContactClick()">
+      Contact
+    </button>
   </action-button>
 </div>

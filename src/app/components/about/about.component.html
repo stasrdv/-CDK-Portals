@@ -1,9 +1,14 @@
 <div class="wrapper">
+  <div class="alert">
+    {{ message }}
+  </div>
   <p>
     About page!
   </p>
 
-  <action-button (click)="handleAboutClick()">
-    <button class="btn btn-outline-success">About</button>
+  <action-button>
+    <button class="btn btn-outline-success" (click)="handleAboutClick()">
+      About
+    </button>
   </action-button>
 </div>
