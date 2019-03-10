@@ -1,4 +1,6 @@
-# CdkPortals
+Angular CDK Portals
+
+A Portalis a piece of UI that can be dynamically rendered to an open slot on the page. The “piece of UI” can be either a Component or a TemplateRef and the "open slot" is a
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
